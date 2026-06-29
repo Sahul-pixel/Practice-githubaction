@@ -1,0 +1,15 @@
+# workflow
+name: hello
+
+on: workflow_dispatch
+
+
+jobs:
+  say-hello:
+  #create ephemal contanier
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: say hello to every one
+        run: echo "hello every one"
+        
