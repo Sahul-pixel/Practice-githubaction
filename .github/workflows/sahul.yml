@@ -9,16 +9,19 @@ jobs:
       - name: cloing code into git
         run: echo "cloned sucssfully"
   build:
+    needs: code
     runs-on: ubuntu-latest
     steps:
       - name: build useing docker background
         run: echo "build code incontanier"
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: test code to validation
         run: echo "test code production"
   depoly:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: depoly application background
