@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: testing the code testing team
-        run: echo "code test sucessfuly
+        run: echo "code test sucessfuly"
   deploy:
     runs-on: ubuntu-latest
     steps:
