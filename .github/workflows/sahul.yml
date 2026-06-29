@@ -1,0 +1,25 @@
+#workflow
+name: sahul
+on: workflow_dispatch
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: cloing code into git
+        run: echo "cloned sucssfully"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build useing docker background
+        run: echo "build code incontanier"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test code to validation
+        run: echo "test code production"
+  depoly:
+    runs-on: ubuntu-latest
+    steps:
+      - name: depoly application background
+        run: echo " deploy application on server"
