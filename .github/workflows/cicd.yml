@@ -1,0 +1,25 @@
+# workflow
+name: cicd
+on: workflow_dispatch
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: cloning the code background
+        run: echo "copy the successfuly"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build code using docker background
+        run: echo "code builded"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing the code testing team
+        run: echo "code test sucessfuly
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: depoly code in productions
+        run: echo "application depoly in server"
