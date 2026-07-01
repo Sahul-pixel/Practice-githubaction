@@ -16,7 +16,7 @@ jobs:
     steps:
       # This step will automatically clone the code of the current branch into the runner.
       - name: Checkout/Clone the code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       # Install Python
       - name: Set up Python
