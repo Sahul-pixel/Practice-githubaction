@@ -1,0 +1,21 @@
+# workflow
+name: sahul
+on: 
+  push:
+
+jobs:
+  run-python: 
+    runs-on: ubuntu-latest
+    steps:
+    # Step 1: Check out your repository code so the runner can see it
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # Step 2: Set up the Python environment
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12' # Specify your preferred Python version
+        cache: 'pip'           # Optional: Caches dependencies for speed
+
+  
